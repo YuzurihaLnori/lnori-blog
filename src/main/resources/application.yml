@@ -1,0 +1,37 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: lnori
+    password: root
+    url: jdbc:mysql://localhost:3306/blog?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+  thymeleaf:
+    mode: HTML
+  mvc:
+    static-path-pattern: /**
+  data:
+    elasticsearch:
+      cluster-name: elasticsearch
+      cluster-nodes: 127.0.0.1:9300
+  rabbitmq:
+    host: 127.0.0.1
+    username: blog
+    password: blog
+    virtual-host: /blog
+    template:
+      retry:
+        enabled: true
+        initial-interval: 10000ms
+        max-interval: 30000ms
+        multiplier: 2
+      exchange: blog.search.exchange
+    publisher-confirms: true
+logging:
+  level:
+    lnori: debug
+    org.springframework: warn
+  file: log/blog.log
+mybatis:
+  typeAliasesPackage: lnori.blog.entity
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    mapUnderscoreToCamelCase: true # 开启驼峰命名转换法
