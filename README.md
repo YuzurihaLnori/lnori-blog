@@ -1,6 +1,6 @@
 > > 源码领取方式: [https://github.com/YuzurihaLnori/lnori-blog](https://github.com/YuzurihaLnori/lnori-blog "https://github.com/YuzurihaLnori/lnori-blog")
 >
-> 本文将从技术栈、功能需求、数据库设计来讲述，前端页面展示可以看我上一篇文章：[【SpringBoot搭建个人博客】- 前端页面展示（一）](https://lnori.mynatapp.cc/blog/4 "【SpringBoot搭建个人博客】- 前端页面展示（一）")
+> 本文将从技术栈、功能需求、数据库设计来讲述，前端页面展示可以看我上一篇文章：[【SpringBoot搭建个人博客】- 前端页面展示（一）](http://lnori.mynatapp.cc/page/6.html "【SpringBoot搭建个人博客】- 前端页面展示（一）")
 >
 > ### 一、技术栈
 >
